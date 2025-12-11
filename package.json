@@ -1,0 +1,24 @@
+{
+  "name": "cloning2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kubanabaraka/cloning-boostedusa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kubanabaraka/cloning-boostedusa/issues"
+  },
+  "homepage": "https://github.com/Kubanabaraka/cloning-boostedusa#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
