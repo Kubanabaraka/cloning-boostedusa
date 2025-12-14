@@ -9,15 +9,133 @@
     </title>
   </head>
   <body>
+    <!-- Desktop Header (md+) -->
+    <header
+      class="hidden md:block sticky top-0 z-50 bg-white/80  text-black"
+    >
+      <div class="flex items-center justify-between px-6 lg:px-12 py-4">
+        <!-- Logo -->
+        <img
+          src="/src/assets/images/Boosted-Boards-Scooters-Logo_1600x.png"
+          alt="Boostedusa Logo"
+          class="w-36 lg:w-40"
+        />
+
+        <!-- Navigation Links -->
+        <nav class="flex flex-col gap-2">
+          <!-- Top Row -->
+          <div
+            class="flex items-center gap-4 lg:gap-6 text-xs lg:text-sm font-semibold"
+          >
+            <a href="#" class="hover:text-gray-300">ELECTRIC BIKES</a>
+            <a href="#" class="hover:text-gray-300">SKATEBOARDS</a>
+            <a href="#" class="hover:text-gray-300">ONEWHEEL</a>
+            <a href="#" class="hover:text-gray-300">SCOOTERS</a>
+            <a href="#" class="hover:text-gray-300">UNICYCLES</a>
+            <a href="#" class="hover:text-gray-300">PROTECTIVE GEAR</a>
+            <a href="#" class="hover:text-gray-300 flex items-center gap-1">
+              ACCESSORIES
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Bottom Row -->
+          <div
+            class="flex items-center gap-4 lg:gap-6 text-xs lg:text-sm font-semibold"
+          >
+            <a href="#" class="hover:text-gray-300">LOCATIONS</a>
+            <a href="#" class="hover:text-gray-300">GIFT CARD</a>
+            <a href="#" class="hover:text-gray-300 flex items-center gap-1">
+              MORE INFO
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Right Icons -->
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-gray-300">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-300">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-300">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
     <nav
-      class="flex items-center justify-between sticky top-0 z-50 mt-2 px-4 lg:px-8 overflow-hidden bg-gray-200 py-4"
+      class="flex md:hidden items-center justify-between sticky top-0 z-50 px-4 overflow-hidden bg-gray-200 py-4"
     >
       <img
         width="50"
         height="50"
         src="https://img.icons8.com/ios/50/menu--v1.png"
         alt="menu--v1"
-        class="size-5 md:hidden"
+        class="size-5"
       />
 
       <img
@@ -26,17 +144,7 @@
         class="w-40"
       />
 
-      <!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
-        <a href="#" class="hover:text-orange-500">ELECTRIC BIKES</a>
-        <a href="#" class="hover:text-orange-500">SKATEBOARDS</a>
-        <a href="#" class="hover:text-orange-500">ONEWHEEL</a>
-        <a href="#" class="hover:text-orange-500">SCOOTERS</a>
-        <a href="#" class="hover:text-orange-500">UNICYCLES</a>
-        <a href="#" class="hover:text-orange-500">PROTECTIVE GEAR</a>
-        <a href="#" class="hover:text-orange-500">ACCESSORIES</a>
-      </div>
-      <div class="flex items-center flex-wrap gap-2 md:gap-4">
+      <div class="flex items-center flex-wrap gap-2">
         <img
           width="50"
           height="50"
