@@ -10,14 +10,14 @@
   </head>
   <body>
     <nav
-      class="flex items-center justify-between sticky top-0 z-50 mt-2 px-4 overflow-hidden bg-gray-200 py-4"
+      class="flex items-center justify-between sticky top-0 z-50 mt-2 px-4 lg:px-8 overflow-hidden bg-gray-200 py-4"
     >
       <img
         width="50"
         height="50"
         src="https://img.icons8.com/ios/50/menu--v1.png"
         alt="menu--v1"
-        class="size-5"
+        class="size-5 md:hidden"
       />
 
       <img
@@ -26,14 +26,17 @@
         class="w-40"
       />
 
-      <!-- <div>
-        <a href="">ELECTRIC BIKE</a>
-        <a href="">SKATEBOARDS</a>
-        <a href="">ONEWHEEL</a>
-        <a href="">UNICYCLES</a>
-        <a href="">PROTECTIVE GEAR</a>
-      </div> -->
-      <div class="flex items-center flex-wrap gap-2">
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="#" class="hover:text-orange-500">ELECTRIC BIKES</a>
+        <a href="#" class="hover:text-orange-500">SKATEBOARDS</a>
+        <a href="#" class="hover:text-orange-500">ONEWHEEL</a>
+        <a href="#" class="hover:text-orange-500">SCOOTERS</a>
+        <a href="#" class="hover:text-orange-500">UNICYCLES</a>
+        <a href="#" class="hover:text-orange-500">PROTECTIVE GEAR</a>
+        <a href="#" class="hover:text-orange-500">ACCESSORIES</a>
+      </div>
+      <div class="flex items-center flex-wrap gap-2 md:gap-4">
         <img
           width="50"
           height="50"
@@ -51,36 +54,46 @@
       </div>
     </nav>
     <div>
-      <div>
-        <img
-          src="https://boostedusa.com/cdn/shop/files/boosted-rev-electric-scooter-now-in-stock_c5926a3e-f2ff-46a9-9c91-97765798bac4_1400x.jpg?v=1738713523"
-          alt="Boostedusa Logo"
-          class="relative opacity-45"
-        />
-        <div class="absolute top-52">
+      <div class="md:grid md:grid-cols-2 lg:grid-cols-4">
+        <!-- Boosted Rev -->
+        <div class="relative">
           <img
-            src="/src/assets/images/Boosted-Boards-Scooters-Logo_1600x.png"
+            src="https://boostedusa.com/cdn/shop/files/boosted-rev-electric-scooter-now-in-stock_c5926a3e-f2ff-46a9-9c91-97765798bac4_1400x.jpg?v=1738713523"
             alt="Boostedusa Logo"
-            class="w-48 mx-28"
+            class="w-full h-full object-cover opacity-45"
           />
-          <p class="font-bold text-xl text-center ml-6">
-            Boosted Rev and Accessories are still In stock!
-          </p>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center"
+          >
+            <img
+              src="/src/assets/images/Boosted-Boards-Scooters-Logo_1600x.png"
+              alt="Boostedusa Logo"
+              class="w-48 mb-2"
+            />
+            <p class="font-bold text-xl text-center px-4">
+              Boosted Rev and Accessories are still In stock!
+            </p>
+          </div>
         </div>
-        <img
-          src="https://boostedusa.com/cdn/shop/files/Boosted-USA-Super-73-Home-Box-feature-600x544_1400x.jpg?v=1738710742"
-          alt=""
-          class="relative opacity-45"
-        />
-        <div class="absolute top-128">
+        <!-- Super73 -->
+        <div class="relative">
           <img
-            src="/src/assets/images/Super73_Logo_Horizontal_Trademark_Black_1000x200_69f340ae-d549-4366-822d-2af1de3536f9.png"
-            alt="Boostedusa Logo"
-            class="w-48 mx-28"
+            src="https://boostedusa.com/cdn/shop/files/Boosted-USA-Super-73-Home-Box-feature-600x544_1400x.jpg?v=1738710742"
+            alt=""
+            class="w-full h-full object-cover opacity-45"
           />
-          <p class="font-bold text-xl text-center ml-6">
-            Boosted USA x Super73 Join the ride
-          </p>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center"
+          >
+            <img
+              src="/src/assets/images/Super73_Logo_Horizontal_Trademark_Black_1000x200_69f340ae-d549-4366-822d-2af1de3536f9.png"
+              alt="Boostedusa Logo"
+              class="w-48 mb-2"
+            />
+            <p class="font-bold text-xl text-center px-4">
+              Boosted USA x Super73 Join the ride
+            </p>
+          </div>
         </div>
         <div class="relative">
           <img
@@ -124,7 +137,9 @@
     </div>
 
     <section>
-      <div class="bg-black flex flex-col items-center py-6 gap-4">
+      <div
+        class="bg-black flex flex-col md:flex-row items-center justify-center py-6 gap-4 md:gap-12 lg:gap-20"
+      >
         <img
           src="/src/assets/images/buy-boosted-rev-electric-scooter-press-electrek-logo-white_1600x.png"
           alt="Electrek"
@@ -172,22 +187,22 @@
       </p>
     </section>
 
-    <section>
-      <div>
+    <section class="md:flex md:flex-row-reverse md:items-center">
+      <div class="md:w-1/2">
         <img
           src="/src/assets/images/Boosted-USA-Super-73-Home-Box-feature-600x600_1600x.jpeg"
           alt="Super73 Electric Bikes"
-          class="w-full"
+          class="w-full h-full object-cover"
         />
       </div>
-      <div class="px-6 py-6">
-        <h2 class="text-2xl font-bold mb-3">Why Super73?</h2>
-        <p class="text-sm mb-3">
+      <div class="px-6 py-6 md:w-1/2 md:px-12 lg:px-20">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Why Super73?</h2>
+        <p class="text-sm md:text-base mb-3">
           Super73 Electric Bikes are the industry standard in style and
           performance!
         </p>
-        <p class="text-sm font-bold mb-3">Fun for every rider!</p>
-        <p class="text-sm mb-4">
+        <p class="text-sm md:text-base font-bold mb-3">Fun for every rider!</p>
+        <p class="text-sm md:text-base mb-4">
           With a bike for every rider and any condition, Super73 is the easiest
           get on and go e-bike out there. With multiple levels of pedal assist
           and speed levels, these bikes can be customized to changing terrains
@@ -205,22 +220,22 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="md:flex md:items-center">
+      <div class="md:w-1/2">
         <img
           src="/src/assets/images/minimotors-dualtron-speedway-electric-scooters_2000x.jpeg"
           alt="Minimotors Electric Scooters"
-          class="w-full"
+          class="w-full h-full object-cover"
         />
       </div>
-      <div class="px-6 py-6">
-        <h2 class="text-2xl font-bold mb-3">
+      <div class="px-6 py-6 md:w-1/2 md:px-12 lg:px-20">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">
           Why Minimotors Electric Scooters?
         </h2>
-        <p class="text-sm font-bold mb-3">
+        <p class="text-sm md:text-base font-bold mb-3">
           Build quality is as impressive as the performance.
         </p>
-        <p class="text-sm mb-4">
+        <p class="text-sm md:text-base mb-4">
           Dualtron Electric Scooters represent the highest quality electric
           scooters you can find today. They are the best built, most capable,
           and have the longest range in the market. Experience the best electric
@@ -234,23 +249,27 @@
         </a>
       </div>
     </section>
-    <section>
-      <div>
+    <section class="md:flex md:flex-row-reverse md:items-center">
+      <div class="md:w-1/2">
         <img
           src="https://boostedusa.com/cdn/shop/files/GTR_Collection_Product_Bamboo_2in1_1_600x.jpg"
           alt="Evolve Electric Skateboard"
-          class="w-full"
+          class="w-full h-full object-cover"
         />
       </div>
-      <div class="px-6 py-6">
-        <h2 class="text-2xl font-bold mb-3">Why Evolve Skateboards?</h2>
-        <p class="text-sm mb-3">
+      <div class="px-6 py-6 md:w-1/2 md:px-12 lg:px-20">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">
+          Why Evolve Skateboards?
+        </h2>
+        <p class="text-sm md:text-base mb-3">
           Thoughtfully crafted, Evolve boards are high-performance machines that
           marry strength, sophistication, and the highest quality materials with
           cutting-edge technology.
         </p>
-        <p class="text-sm font-bold mb-3">Built by riders for riders!</p>
-        <p class="text-sm mb-4">
+        <p class="text-sm md:text-base font-bold mb-3">
+          Built by riders for riders!
+        </p>
+        <p class="text-sm md:text-base mb-4">
           Evolve Skateboards was born in Australia, in 2008, through sheer
           passion and obsession for finding the link between snowboarding,
           surfing, and all things carving on land. After scouring the world for
@@ -266,18 +285,18 @@
         </a>
       </div>
     </section>
-    <section>
-      <div>
+    <section class="md:flex md:items-center">
+      <div class="md:w-1/2">
         <img
           src="https://boostedusa.com/cdn/shop/files/boosted-rev-display_600x.jpg"
           alt="Electric Scooter"
-          class="w-full"
+          class="w-full h-full object-cover"
         />
       </div>
-      <div class="px-6 py-8 text-center">
-        <p class="text-sm mb-2">High-performance</p>
-        <h2 class="text-3xl font-bold mb-3">Electric Scooters</h2>
-        <p class="text-sm mb-6">
+      <div class="px-6 py-8 text-center md:w-1/2 md:px-12 lg:px-20">
+        <p class="text-sm md:text-base mb-2">High-performance</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">Electric Scooters</h2>
+        <p class="text-sm md:text-base mb-6">
           Cruising campus, going to work or getting through that long list of
           errands has never been easier or more fun.
         </p>
@@ -290,8 +309,8 @@
       </div>
     </section>
 
-    <section class="px-4 py-6">
-      <div class="w-full aspect-video">
+    <section class="px-4 py-6 md:py-12 lg:py-16">
+      <div class="w-full aspect-video max-w-5xl mx-auto">
         <iframe
           class="w-full h-full"
           src="https://www.youtube.com/embed/1eLZBg9Qdbw"
@@ -303,20 +322,20 @@
         ></iframe>
       </div>
     </section>
-    <section>
-      <div>
+    <section class="md:flex md:flex-row-reverse md:items-center">
+      <div class="md:w-1/2">
         <img
           src="https://boostedusa.com/cdn/shop/files/evolve-skateboards-1_2000x.jpg"
           alt="Evolve Skateboard"
-          class="w-full"
+          class="w-full h-full object-cover"
         />
       </div>
-      <div class="px-6 py-8 text-center">
-        <p class="text-sm mb-2">All Terrain + Street</p>
-        <h2 class="text-2xl font-bold mb-2">
+      <div class="px-6 py-8 text-center md:w-1/2 md:px-12 lg:px-20">
+        <p class="text-sm md:text-base mb-2">All Terrain + Street</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">
           The Best All Terrain Skateboard!
         </h2>
-        <p class="text-sm font-bold mb-6">2-IN-1</p>
+        <p class="text-sm md:text-base font-bold mb-6">2-IN-1</p>
         <a
           href="#"
           class="inline-block bg-orange-500 text-white font-semibold px-16 py-3 rounded-full w-80"
@@ -325,14 +344,16 @@
         </a>
       </div>
     </section>
-    <section class="py-8">
+    <section class="py-8 md:py-12">
       <h2 class="text-3xl font-bold text-center mb-4">
         Looking for Boosted Accessories?
       </h2>
       <div class="w-16 h-0.5 bg-gray-300 mx-auto mb-6"></div>
-      <div class="flex overflow-x-auto gap-4 px-4 pb-4">
+      <div
+        class="flex overflow-x-auto gap-4 px-4 pb-4 md:grid md:grid-cols-3 lg:grid-cols-5 md:overflow-visible md:max-w-6xl md:mx-auto"
+      >
         <!-- Product 1 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/BoostedUSA-Bert-Touch-Battery-restore-module-for-boosted-batteries-product_1600x.jpeg"
             alt="BoostedUSA Bert Touch XR Battery Restore module"
@@ -344,7 +365,7 @@
           <p class="text-sm font-semibold">$250.00</p>
         </div>
         <!-- Product 2 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/BoostedUSA-Bert-Touch-Battery-restore-module-for-boosted-batteries-product_1600x.jpeg"
             alt="BoostedUSA Bert Touch XR Battery Restore Service"
@@ -356,7 +377,7 @@
           <p class="text-sm font-semibold">$100.00</p>
         </div>
         <!-- Product 3 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/Cags_1600x.jpeg"
             alt="Cags"
@@ -366,7 +387,7 @@
           <p class="text-sm font-semibold">$99.00</p>
         </div>
         <!-- Product 4 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/TireSquare_1600x.jpeg"
             alt="Tires"
@@ -376,7 +397,7 @@
           <p class="text-sm font-semibold">$49.00</p>
         </div>
         <!-- Product 5 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/Skatetool2_1600x.jpeg"
             alt="Skate Tool"
@@ -386,7 +407,7 @@
           <p class="text-sm font-semibold">$25.00</p>
         </div>
         <!-- Product 6 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/Carbon_Revo_Tow_Handle_1600x.jpeg"
             alt="Carbon Revo Tow Handle"
@@ -396,7 +417,7 @@
           <p class="text-sm font-semibold">$35.00</p>
         </div>
         <!-- Product 7 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/Carbonrevo_Upper_Kiddy_Bar_profile_1600x.jpeg"
             alt="Carbonrevo Upper Kiddy Bar"
@@ -406,7 +427,7 @@
           <p class="text-sm font-semibold">$45.00</p>
         </div>
         <!-- Product 8 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/BoostedUSA-Boosted-Accesories-Disc-Brake-600x600_1600x.jpeg"
             alt="Disc Brake"
@@ -416,7 +437,7 @@
           <p class="text-sm font-semibold">$75.00</p>
         </div>
         <!-- Product 9 -->
-        <div class="shrink-0 w-40 text-center">
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
           <img
             src="/src/assets/images/revmotorcontroller_1600x.jpeg"
             alt="Rev Motor Controller"
@@ -424,6 +445,266 @@
           />
           <p class="text-sm text-orange-500 mb-1">Rev Motor Controller</p>
           <p class="text-sm font-semibold">$150.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 md:py-12">
+      <h2 class="text-3xl font-bold text-center mb-4">
+        Looking for Evolve Accessories?
+      </h2>
+      <div class="w-16 h-0.5 bg-gray-300 mx-auto mb-6"></div>
+      <div
+        class="flex overflow-x-auto gap-4 px-4 pb-4 md:grid md:grid-cols-3 lg:grid-cols-5 md:overflow-visible md:max-w-6xl md:mx-auto"
+      >
+        <!-- Product 1 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Calikites-LastMileSF-Evolve-Electric-Skateboard-38T-Kegal-Upgrade-Kit_c6d3f6b7-8e88-4ee7-b767-236d1ef8ad8d_1600x.png"
+            alt="BoostedUSA Bert Touch XR Battery Restore module"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">
+            BoostedUSA Bert Touch XR Battery Restore module
+          </p>
+          <p class="text-sm font-semibold">$250.00</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Cags_1600x.jpeg"
+            alt="Cags"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Board Cags</p>
+          <p class="text-sm font-semibold">$99.00</p>
+        </div>
+        <!-- Product 4 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/TireSquare_1600x.jpeg"
+            alt="Tires"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Board Tires</p>
+          <p class="text-sm font-semibold">$49.00</p>
+        </div>
+        <!-- Product 5 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Skatetool2_1600x.jpeg"
+            alt="Skate Tool"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Skate Tool</p>
+          <p class="text-sm font-semibold">$25.00</p>
+        </div>
+        <!-- Product 6 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Carbon_Revo_Tow_Handle_1600x.jpeg"
+            alt="Carbon Revo Tow Handle"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Carbon Revo Tow Handle</p>
+          <p class="text-sm font-semibold">$35.00</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/revmotorcontroller_1600x.jpeg"
+            alt="BoostedUSA Bert Touch XR Battery Restore Service"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">
+            BoostedUSA Bert Touch XR Battery Restore Service
+          </p>
+          <p class="text-sm font-semibold">$100.00</p>
+        </div>
+        <!-- Product 7 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Carbonrevo_Upper_Kiddy_Bar_profile_1600x.jpeg"
+            alt="Carbonrevo Upper Kiddy Bar"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Carbonrevo Upper Kiddy Bar</p>
+          <p class="text-sm font-semibold">$45.00</p>
+        </div>
+        <!-- Product 8 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/BoostedUSA-Boosted-Accesories-Disc-Brake-600x600_1600x.jpeg"
+            alt="Disc Brake"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Disc Brake</p>
+          <p class="text-sm font-semibold">$75.00</p>
+        </div>
+        <!-- Product 9 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/revmotorcontroller_1600x.jpeg"
+            alt="Rev Motor Controller"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Rev Motor Controller</p>
+          <p class="text-sm font-semibold">$150.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 md:py-12">
+      <h2 class="text-3xl font-bold text-center mb-4">
+        Minimotors Accessories?
+      </h2>
+      <div class="w-16 h-0.5 bg-gray-300 mx-auto mb-6"></div>
+      <div
+        class="flex overflow-x-auto gap-4 px-4 pb-4 md:grid md:grid-cols-3 lg:grid-cols-5 md:overflow-visible md:max-w-6xl md:mx-auto"
+      >
+        <!-- Product 1 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/ScreenShot2021-09-09at1.20.51PM_81915a51-8508-435e-ba89-d8f957cf5376_1600x.png"
+            alt="BoostedUSA Bert Touch XR Battery Restore module"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">
+            BoostedUSA Bert Touch XR Battery Restore module
+          </p>
+          <p class="text-sm font-semibold">$250.00</p>
+        </div>
+        <!-- Product 2 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Carbon_Revo_Tow_Handle_1600x.jpeg"
+            alt="BoostedUSA Bert Touch XR Battery Restore Service"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">
+            BoostedUSA Bert Touch XR Battery Restore Service
+          </p>
+          <p class="text-sm font-semibold">$100.00</p>
+        </div>
+        <!-- Product 3 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Cags_1600x.jpeg"
+            alt="Cags"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Board Cags</p>
+          <p class="text-sm font-semibold">$99.00</p>
+        </div>
+        <!-- Product 4 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/TireSquare_1600x.jpeg"
+            alt="Tires"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Board Tires</p>
+          <p class="text-sm font-semibold">$49.00</p>
+        </div>
+        <!-- Product 5 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Skatetool2_1600x.jpeg"
+            alt="Skate Tool"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Skate Tool</p>
+          <p class="text-sm font-semibold">$25.00</p>
+        </div>
+        <!-- Product 6 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Carbon_Revo_Tow_Handle_1600x.jpeg"
+            alt="Carbon Revo Tow Handle"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Carbon Revo Tow Handle</p>
+          <p class="text-sm font-semibold">$35.00</p>
+        </div>
+        <!-- Product 7 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/Carbonrevo_Upper_Kiddy_Bar_profile_1600x.jpeg"
+            alt="Carbonrevo Upper Kiddy Bar"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Carbonrevo Upper Kiddy Bar</p>
+          <p class="text-sm font-semibold">$45.00</p>
+        </div>
+        <!-- Product 8 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/BoostedUSA-Boosted-Accesories-Disc-Brake-600x600_1600x.jpeg"
+            alt="Disc Brake"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Boosted Disc Brake</p>
+          <p class="text-sm font-semibold">$75.00</p>
+        </div>
+        <!-- Product 9 -->
+        <div class="shrink-0 w-40 md:w-auto md:shrink text-center">
+          <img
+            src="/src/assets/images/revmotorcontroller_1600x.jpeg"
+            alt="Rev Motor Controller"
+            class="w-full mb-2"
+          />
+          <p class="text-sm text-orange-500 mb-1">Rev Motor Controller</p>
+          <p class="text-sm font-semibold">$150.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-10 px-6 bg-white">
+      <div class="max-w-md mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-3">Subscribe to our Newsletter</h2>
+        <p class="text-sm text-gray-600 mb-6">
+          Sign up to get the latest on sales, new releases and more ...
+        </p>
+
+        <form class="text-left">
+          <label class="block text-sm mb-2">
+            <span class="text-red-500">*</span> Email
+          </label>
+          <input
+            type="email"
+            required
+            class="w-full border border-gray-700 rounded px-4 py-3 mb-4 focus:outline-none focus:border-gray-400"
+          />
+
+          <p class="text-xs text-gray-500 text-center mb-6 leading-relaxed">
+            By submitting this form, you are consenting to receive marketing
+            emails from: Calikites, 350 Hayes St, San Francisco, CA, 94102, US,
+            http://www.calikites.com. You can revoke your consent to receive
+            emails at any time by using the SafeUnsubscribe® link, found at the
+            bottom of every email.
+            <a href="#" class="underline"
+              >Emails are serviced by Constant Contact.</a
+            >
+          </p>
+
+          <button
+            type="submit"
+            class="w-full bg-orange-700 hover:bg-orange-600 text-white font-semibold py-3 rounded transition-colors"
+          >
+            Sign up!
+          </button>
+        </form>
+
+        <div class="mt-6">
+          <a
+            href="#"
+            class="inline-flex items-center gap-1 text-xs text-white bg-gray-500 border border-gray-500 rounded-3xl px-3 py-1"
+          >
+            Constant Contact
+          </a>
         </div>
       </div>
     </section>
